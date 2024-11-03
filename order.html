@@ -153,11 +153,11 @@
                     <lable for="lastName">Last Name</lable> <input type="text" id="lastName" name="lastName" required>
                 </div>
                 <div class="form_group">
-                    <lable for="class">Class</lable> <input type="number" id="class" name="class" required>
+                    <lable for="PIN">PIN</lable> <input type="number" id="PIN" name="PIN" required>
                 </div>
                 <div class="form_group">
-                    <lable for="fatherName">Father's Name</lable> <input type="text" id="fatherName" name="fatherName"
-                        required>
+                    <lable for="nickName">Nick Name</lable> <input type="text" id="nickName" name="nickName"
+                        >
                 </div>
                 <div class="form_group">
                     <lable for="mobileNumber">Mobile No.</lable> <input type="number" id="mobileNumber"
@@ -193,12 +193,12 @@
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 status.classList.add('success');
-                status.innerHTML = "success! click here for next ";
+                status.innerHTML = "order successful! click here";
                 section.style.pointerEvents = "all";
                 // form.reset()      
             }).catch(error => {
                 status.classList.add('error');
-                status.innerHTML = "Oops! There was a problem in submitting your form";
+                status.innerHTML = "Oops! There was a problem in ordering";
             });
         }
         form.addEventListener("submit", handleSubmit);
@@ -206,8 +206,8 @@
             //getting data       
             var first_N = document.getElementById("firstName").value;
             var last_N = document.getElementById("lastName").value;
-            var study = document.getElementById("class").value;
-            var father_N = document.getElementById("fatherName").value;
+            var study = document.getElementById("PIN").value;
+            var father_N = document.getElementById("nickName").value;
             var mobi_no = document.getElementById("mobileNumber").value;
             var email = document.getElementById("email").value;
             var addr = document.getElementById("address").value;
@@ -240,7 +240,7 @@
             g = addr;
             h = fedbak;
             if (a == fst_N && b == lst_N && c == std && d == fatr_N && e == mo_no && f == eml && g == adre && h == feb) {
-                alert("login successfull");
+                alert("valid details");
             } else {
                 alert("invalid details");
             }
