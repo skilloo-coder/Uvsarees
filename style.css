@@ -156,7 +156,7 @@
 }
 
 .box span::after{
-  content: "80 % Off #sale80off ";
+  content: "080 % Off #sale80off ";
   position: absolute;
   bottom: 0.3rem;
   left: 0.3rem;
