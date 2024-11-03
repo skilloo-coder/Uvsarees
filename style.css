@@ -169,3 +169,39 @@
   animation: colour-change 20s linear infinite;
 }
 
+@media (min-width:1270px) {
+  /* html{
+    font-size: 10px;
+  } */
+  .stage{
+    min-width: 100vw;
+    max-width: auto;
+  }
+  .hero .topnav {
+    height: 3rem;
+  }
+  
+  .topnav .logo {
+    height: 3rem;
+  }
+  
+  .logo a {
+    height: 1.5rem;
+    
+  }
+  
+  .logo a img {
+    height: 1.5rem;
+  }
+  
+  .topnav .menu {
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .menu div{
+    padding: 0.5rem;
+  }
+  .box{
+    left: 35rem;
+  }
+}
