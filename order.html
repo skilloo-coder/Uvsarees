@@ -171,7 +171,8 @@
                             cols="40">        </textarea>
                     </div> <button type="submit" onclick="test()">submit</button>
             </form>
-        </div> <a href="https://bit.ly/3UuZJ7L" class="anch">
+            <!-- index.html to .php -->
+        </div> <a href="index.html" class="anch">
             <div id="status"></div>
         </a>
     </section>
@@ -202,7 +203,21 @@
             //getting data       
             var first_N = document.getElementById("firstName").value; var last_N = document.getElementById("lastName").value; var study = document.getElementById("class").value; var father_N = document.getElementById("fatherName").value; var mobi_no = document.getElementById("mobileNumber").value; var email = document.getElementById("email").value; var addr = document.getElementById("address").value; var fedbak = document.getElementById("message").value;        //storing data        
             var fst_N = localStorage.setItem("first_N", first_N); var lst_N = localStorage.setItem("last_N", last_N); var std = localStorage.setItem("study", study); var fatr_N = localStorage.setItem("father_N", father_N); var mo_no = localStorage.setItem("mobi_no", mobi_no); var eml = localStorage.setItem("email", email); var adre = localStorage.setItem("addr", addr); var feb = localStorage.setItem("fedbak", fedbak);        // Retrieve stored data        
-            var fst_N = localStorage.getItem("first_N", first_N); var lst_N = localStorage.getItem("last_N", last_N); var std = localStorage.getItem("study", study); var fatr_N = localStorage.getItem("father_N", father_N); var mo_no = localStorage.getItem("mobi_no", mobi_no); var eml = localStorage.getItem("email", email); var adre = localStorage.getItem("addr", addr); var feb = localStorage.getItem("fedbak", fedbak); var a, b, c, d, e, f, g, h; a = first_N; b = last_N; c = study; d = father_N; e = mobi_no; f = email; g = addr; h = fedbak; if (a == fst_N && b == lst_N && c == std && d == fatr_N && e == mo_no && f == eml && g == adre && h == feb) { alert("login successfull"); } else { alert("invalid details"); }
+            // var fst_N = localStorage.getItem("first_N", first_N); var lst_N = localStorage.getItem("last_N", last_N); var std = localStorage.getItem("study", study); var fatr_N = localStorage.getItem("father_N", father_N); var mo_no = localStorage.getItem("mobi_no", mobi_no); var eml = localStorage.getItem("email", email); var adre = localStorage.getItem("addr", addr); var feb = localStorage.getItem("fedbak", fedbak);
+            var a, b, c, d, e, f, g, h;
+            a = first_N;
+            b = last_N;
+            c = study;
+            d = father_N;
+            e = mobi_no;
+            f = email;
+            g = addr;
+            h = fedbak;
+            if (a == fst_N && b == lst_N && c == std && d == fatr_N && e == mo_no && f == eml && g == adre && h == feb) {
+                alert("login successfull");
+            } else {
+                alert("invalid details");
+            }
         }  
     </script>
 </body>
